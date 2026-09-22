@@ -40,9 +40,6 @@ var cameraIcon = L.icon({
     iconAnchor:   [19, 19], 
     popupAnchor:  [0, -10] 
 });
-var marker1 = L.marker([41.98,-87.72], {icon: cameraIcon}).addTo(map); 
-var marker2 = L.marker([30.44,-84.3], {icon: cameraIcon}).addTo(map);
-var marker3 = L.marker([40.76,-73.99], {icon: cameraIcon}).addTo(map);
 marker1.bindPopup('<p style="color:orange; font-weight:bold"> Willis Tower </p>' + pic1);
 marker2.bindPopup('<p style="color:blue; font-weight:bold"> Disneyland</p>' + pic2);
 marker3.bindPopup('<p style="color:red; font-weight:bold"> Statue of Liberty</p>' + pic3);
