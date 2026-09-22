@@ -35,11 +35,14 @@ var pic1 = '<img src="images/willis.jpg" alt="Willis Tower" width="254">';
 var pic2 = '<img src="images/disneyland.jpg" alt="Disneyland" width="331">';
 var pic3 = '<img src="images/statueofliberty.jpg" alt="Statue of Liberty" width="165">';
 var cameraIcon = L.icon({
-    iconUrl: src="images/camera.png",  
+    iconUrl: 'images/camera.png',  
     iconSize:     [38, 38], 
     iconAnchor:   [19, 19], 
     popupAnchor:  [0, -10] 
 });
+var marker1 = L.marker([41.98,-87.72], {icon: cameraIcon}).addTo(map); 
+var marker2 = L.marker([30.44,-84.3], {icon: cameraIcon}).addTo(map);
+var marker3 = L.marker([40.76,-73.99], {icon: cameraIcon}).addTo(map);
 marker1.bindPopup('<p style="color:orange; font-weight:bold"> Willis Tower </p>' + pic1);
 marker2.bindPopup('<p style="color:blue; font-weight:bold"> Disneyland</p>' + pic2);
 marker3.bindPopup('<p style="color:red; font-weight:bold"> Statue of Liberty</p>' + pic3);
